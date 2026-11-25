@@ -1,1 +1,100 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Abarrotes Don Ponce - Pedidos al Mayoreo</title><link rel="stylesheet" href="estilos/styles.css"></head><body><div class="header"><div class="navbar"><div class="brand"><h1 class="titulo-tienda">Abarrotes Don Ponce</h1></div><div class="nav-links"><a href="index.html">Inicio</a><a href="menudeo.html">Pedidos A Domicilio</a><a href="mayoreo.html">Pedidos Mayoreo</a><a href="login.html" class="btn-admin">Administrador</a></div></div></div><div class="form-container" style="max-width:800px"><h2>📦 Pedido al Mayoreo (Comerciantes)</h2><p class="subtitle-form">Servicio especializado para negocios y compras por volumen. Cotiza y realiza tu pedido directamente.</p><form action="exito.html" method="get"><div class="campo-form"><label>Nombre del Negocio / Tienda:</label><input type="text" required placeholder="Ej. Abarrotes La Bendición"></div><div class="campo-form"><label>Correo Electrónico:</label><input type="email" required placeholder="Ej. correo@gmail.com"></div><div class="campo-form"><label>Nombre del Contacto:</label><input type="text" required placeholder="Ej. Carlos Mendoza"></div><div class="campo-form"><label>Teléfono de Contacto:</label><input type="text" required placeholder="Ej. 5587654321"></div><div class="campo-form"><label>RFC:</label><input type="text" placeholder="Ej. ABCD900101XXX"></div><div class="campo-form"><label>Dirección de Negocio o Entrega:</label><textarea rows="2" required placeholder="Calle, número, colonia, municipio y referencias de entrega"></textarea></div><h3 style="margin-top:25px;color:#0066c0">Selección de Productos Mayoreo:</h3><p class="subtitle-aside">Indica la cantidad que requieres de cada artículo:</p><table border="1" style="margin-bottom:20px"><tr><th>Producto</th><th>Precio</th><th>Disponible</th><th>Cantidad</th></tr><tr><td><strong>Oreo</strong><br><small>Galletas</small></td><td>$38.00</td><td>25 disp.</td><td><input type="number" min="0" value="0" style="width:80px;padding:5px"></td></tr><tr><td><strong>Frijol Negro 1kg</strong><br><small>Abarrotes</small></td><td>$34.00</td><td>30 disp.</td><td><input type="number" min="0" value="0" style="width:80px;padding:5px"></td></tr><tr><td><strong>Producto de ejemplo</strong><br><small>Abarrotes</small></td><td>$25.00</td><td>15 disp.</td><td><input type="number" min="0" value="0" style="width:80px;padding:5px"></td></tr><tr><td><strong>Producto de ejemplo</strong><br><small>Limpieza</small></td><td>$42.00</td><td>12 disp.</td><td><input type="number" min="0" value="0" style="width:80px;padding:5px"></td></tr></table><button type="submit" class="btn-enviar" style="background-color:#0066c0;">Enviar Pedido de Mayoreo</button></form><div class="enlace-volver"><a href="index.html">← Regresar a la página principal</a></div><p class="subtitle-form" style="margin-top:20px">Demostración estática: este formulario no registra pedidos ni actualiza inventario.</p></div><div class="footer"><p>&copy; 2026 Abarrotes Don Ponce S.A. de C.V. - Todos los derechos reservados.</p></div></body></html>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abarrotes Don Ponce - Pedidos al Mayoreo</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div class="brand">
+          <h1 class="titulo-tienda">Abarrotes Don Ponce</h1>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Inicio</a>
+          <a href="menudeo.html">Pedidos A Domicilio</a>
+          <a href="mayoreo.html">Pedidos Mayoreo</a>
+          <a href="login.html" class="btn-admin">Administrador</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-container" style="max-width:800px">
+      <h2>📦 Pedido al Mayoreo (Comerciantes)</h2>
+      <p class="subtitle-form">Servicio especializado para negocios y compras por volumen. Cotiza y realiza tu pedido directamente.</p>
+      <form action="exito.html" method="get">
+        <div class="campo-form">
+          <label>Nombre del Negocio / Tienda:</label>
+          <input type="text" required placeholder="Ej. Abarrotes La Bendición">
+        </div>
+        <div class="campo-form">
+          <label>Correo Electrónico:</label>
+          <input type="email" required placeholder="Ej. correo@gmail.com">
+        </div>
+        <div class="campo-form">
+          <label>Nombre del Contacto:</label>
+          <input type="text" required placeholder="Ej. Carlos Mendoza">
+        </div>
+        <div class="campo-form">
+          <label>Teléfono de Contacto:</label>
+          <input type="text" required placeholder="Ej. 5587654321">
+        </div>
+        <div class="campo-form">
+          <label>RFC:</label>
+          <input type="text" placeholder="Ej. ABCD900101XXX">
+        </div>
+        <div class="campo-form">
+          <label>Dirección de Negocio o Entrega:</label>
+          <textarea rows="2" required placeholder="Calle, número, colonia, municipio y referencias de entrega"></textarea>
+        </div>
+
+        <h3 style="margin-top:25px;color:#0066c0">Selección de Productos Mayoreo:</h3>
+        <p class="subtitle-aside">Indica la cantidad que requieres de cada artículo:</p>
+        <table border="1" style="margin-bottom:20px">
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Disponible</th>
+            <th>Cantidad</th>
+          </tr>
+          <tr>
+            <td><strong>Oreo</strong><br><small>Galletas</small></td>
+            <td>$38.00</td>
+            <td>25 disp.</td>
+            <td><input type="number" min="0" value="0" style="width:80px;padding:5px"></td>
+          </tr>
+          <tr>
+            <td><strong>Frijol Negro 1kg</strong><br><small>Abarrotes</small></td>
+            <td>$34.00</td>
+            <td>30 disp.</td>
+            <td><input type="number" min="0" value="0" style="width:80px;padding:5px"></td>
+          </tr>
+          <tr>
+            <td><strong>Producto de ejemplo</strong><br><small>Abarrotes</small></td>
+            <td>$25.00</td>
+            <td>15 disp.</td>
+            <td><input type="number" min="0" value="0" style="width:80px;padding:5px"></td>
+          </tr>
+          <tr>
+            <td><strong>Producto de ejemplo</strong><br><small>Limpieza</small></td>
+            <td>$42.00</td>
+            <td>12 disp.</td>
+            <td><input type="number" min="0" value="0" style="width:80px;padding:5px"></td>
+          </tr>
+        </table>
+        <button type="submit" class="btn-enviar" style="background-color:#0066c0;">Enviar Pedido de Mayoreo</button>
+      </form>
+
+      <div class="enlace-volver">
+        <a href="index.html">← Regresar a la página principal</a>
+      </div>
+      <p class="subtitle-form" style="margin-top:20px">Demostración estática: este formulario no registra pedidos ni actualiza inventario.</p>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2026 Abarrotes Don Ponce S.A. de C.V. - Todos los derechos reservados.</p>
+    </div>
+  </body>
+</html>
