@@ -1,1 +1,113 @@
-<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Abarrotes Don Ponce - Inicio</title><link rel="stylesheet" href="estilos/styles.css"></head><body><div class="header"><div class="navbar"><div class="brand"><h1 class="titulo-tienda">Abarrotes Don Ponce</h1></div><div class="nav-links"><a href="index.html">Inicio</a><a href="menudeo.html">Pedidos A Domicilio</a><a href="mayoreo.html">Pedidos Mayoreo</a><a href="login.html" class="btn-admin">Administrador</a></div></div></div><div class="main-container"><div class="col-izquierda"><h2>¡Bienvenidos a Abarrotes Don Ponce!</h2><p class="intro-bienvenida">Tradición y calidad al servicio de la comunidad desde nuestra fundación. Encuentra todo lo necesario para tu hogar al mejor precio.</p><div class="galeria-imagenes"><div class="img-principal"><img src="img/donPonch.png" alt="Don Ponch" style="max-width:100%;height:auto"></div></div><div class="historia"><h2>Conoce la Tienda</h2><p>Fundada en 1985 por Don Ponce y su familia, nuestra tienda comenzó como un pequeño local de barrio comprometido con ofrecer productos frescos y de calidad a precios accesibles.</p><p>A lo largo de los años, nos hemos expandido a más de 12 sucursales en toda la región, convirtiéndonos en el aliado principal de miles de familias e ingeniosos comerciantes.</p><p>Ahora damos el salto digital para facilitarte la vida: realiza tus pedidos al mayoreo para tu negocio o solicita tu súper a domicilio sin salir de casa.</p></div></div><div class="col-derecha"><h3>📦 Catálogo de Productos y Existencias</h3><p class="subtitle-aside">Catálogo de demostración (datos estáticos): ¡consulta los productos!</p><form class="form-buscar" id="buscador"><input id="buscar" type="text" placeholder="Buscar producto o categoría..."><button type="submit">Buscar</button></form><div style="margin-bottom:15px"><a href="index.html" class="btn-ver-mas">Ver Todo</a></div><table id="tabla"><tr><th>ID</th><th>Nombre</th><th>Categoría</th><th>Precio</th><th>Stock</th></tr><tr><td class="text-center">1</td><td><strong>Oreo</strong></td><td>Galletas</td><td class="text-right">$38.00</td><td class="text-center">25 un.</td></tr><tr><td class="text-center">2</td><td><strong>Frijol Negro 1kg</strong></td><td>Abarrotes</td><td class="text-right">$34.00</td><td class="text-center">30 un.</td></tr><tr><td class="text-center">3</td><td><strong>Producto de ejemplo</strong></td><td>Abarrotes</td><td class="text-right">$25.00</td><td class="text-center">15 un.</td></tr><tr><td class="text-center">4</td><td><strong>Producto de ejemplo</strong></td><td>Limpieza</td><td class="text-right">$42.00</td><td class="text-center">12 un.</td></tr></table></div></div><script>document.getElementById('buscador').addEventListener('submit',function(e){e.preventDefault();let q=document.getElementById('buscar').value.toLowerCase();document.querySelectorAll('#tabla tr:not(:first-child)').forEach(r=>r.style.display=r.innerText.toLowerCase().includes(q)?'':'none');});</script><div class="footer"><p>&copy; 2026 Abarrotes Don Ponce S.A. de C.V. - Todos los derechos reservados.</p></div></body></html>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abarrotes Don Ponce - Inicio</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div class="brand">
+          <h1 class="titulo-tienda">Abarrotes Don Ponce</h1>
+        </div>
+        <div class="nav-links">
+          <a href="index.html">Inicio</a>
+          <a href="menudeo.html">Pedidos A Domicilio</a>
+          <a href="mayoreo.html">Pedidos Mayoreo</a>
+          <a href="login.html" class="btn-admin">Administrador</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="col-izquierda">
+        <h2>¡Bienvenidos a Abarrotes Don Ponce!</h2>
+        <p class="intro-bienvenida">
+          Tradición y calidad al servicio de la comunidad desde nuestra fundación. Encuentra todo lo necesario para tu hogar al mejor precio.
+        </p>
+        <div class="galeria-imagenes">
+          <div class="img-principal">
+            <img src="img/donPonch.png" alt="Don Ponch" style="max-width:100%;height:auto">
+          </div>
+        </div>
+        <div class="historia">
+          <h2>Conoce la Tienda</h2>
+          <p>
+            Fundada en 1985 por Don Ponce y su familia, nuestra tienda comenzó como un pequeño local de barrio comprometido con ofrecer productos frescos y de calidad a precios accesibles.
+          </p>
+          <p>
+            A lo largo de los años, nos hemos expandido a más de 12 sucursales en toda la región, convirtiéndonos en el aliado principal de miles de familias e ingeniosos comerciantes.
+          </p>
+          <p>
+            Ahora damos el salto digital para facilitarte la vida: realiza tus pedidos al mayoreo para tu negocio o solicita tu súper a domicilio sin salir de casa.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-derecha">
+        <h3>📦 Catálogo de Productos y Existencias</h3>
+        <p class="subtitle-aside">Catálogo de demostración (datos estáticos): ¡consulta los productos!</p>
+        <form class="form-buscar" id="buscador">
+          <input id="buscar" type="text" placeholder="Buscar producto o categoría...">
+          <button type="submit">Buscar</button>
+        </form>
+        <div style="margin-bottom:15px">
+          <a href="index.html" class="btn-ver-mas">Ver Todo</a>
+        </div>
+        <table id="tabla">
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Stock</th>
+          </tr>
+          <tr>
+            <td class="text-center">1</td>
+            <td><strong>Oreo</strong></td>
+            <td>Galletas</td>
+            <td class="text-right">$38.00</td>
+            <td class="text-center">25 un.</td>
+          </tr>
+          <tr>
+            <td class="text-center">2</td>
+            <td><strong>Frijol Negro 1kg</strong></td>
+            <td>Abarrotes</td>
+            <td class="text-right">$34.00</td>
+            <td class="text-center">30 un.</td>
+          </tr>
+          <tr>
+            <td class="text-center">3</td>
+            <td><strong>Producto de ejemplo</strong></td>
+            <td>Abarrotes</td>
+            <td class="text-right">$25.00</td>
+            <td class="text-center">15 un.</td>
+          </tr>
+          <tr>
+            <td class="text-center">4</td>
+            <td><strong>Producto de ejemplo</strong></td>
+            <td>Limpieza</td>
+            <td class="text-right">$42.00</td>
+            <td class="text-center">12 un.</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('buscador').addEventListener('submit', function(e) {
+        e.preventDefault();
+        let q = document.getElementById('buscar').value.toLowerCase();
+        document.querySelectorAll('#tabla tr:not(:first-child)').forEach(r => 
+          r.style.display = r.innerText.toLowerCase().includes(q) ? '' : 'none'
+        );
+      });
+    </script>
+
+    <div class="footer">
+      <p>&copy; 2026 Abarrotes Don Ponce S.A. de C.V. - Todos los derechos reservados.</p>
+    </div>
+  </body>
+</html>
