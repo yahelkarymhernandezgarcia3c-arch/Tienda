@@ -1,0 +1,3 @@
+Version estatica preparada para GitHub Pages. Abre index.html.
+La tienda es solo visual: los formularios, login y administracion no guardan datos ni conectan a MySQL.
+Catalogo de ejemplo: productos obtenidos de tickets y filas de muestra marcadas como Producto de ejemplo.
